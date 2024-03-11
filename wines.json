@@ -1,0 +1,44 @@
+{
+  "wines": [
+    {
+      "id": 1,
+      "name": "Fifty Provinces Sauvignon Blanc",
+      "country": "Spain",
+      "image": "src/images/FiftyProvinces .webp",
+      "flagimage": "src/images/spain.svg",
+      "description": "La Mancha, Spain - Bright with floral aromas punctuated by citrus notes. Crisp and light, bursting with tropical notes of grapefruit and kiwi, and a bright finish. This Sauvignon Blanc is perfect with light pastas and seafood. This Sauvignon Blanc overdelivers in every way!"
+    },
+    {
+      "id": 2,
+      "name": "Olema Sauvignon Blanc Loire",
+      "country": "French",
+      "image": "src/images/OlemaSauvignon.webp",
+      "flagimage": "src/images/france.svg",
+      "description": "James Suckling-France - Loire - Sliced melon and green apple. Mineral. Medium body. This wine has a crisp acidity and a lemony finish. Dry and crisp. Oysters please! Screw cap. Drink now."
+    },
+    {
+      "id": 3,
+      "name": "Belvino Pinot Grigio Gold",
+      "country": "Italy",
+      "image": "src/images/Belvino.webp",
+      "flagimage": "src/images/italy.svg",
+      "description": "Veneto, Italy - A crisp, light to medium-bodied Pinot Grigio that is full and rich. Light floral aromas lend themselves to crisp notes of green apple and ripe pear. Slight notes of stone fruits and pear round out the palate. This stunner from Belvino is delicious for all occasions."
+    },
+    {
+      "id": 4,
+      "name": "Vistamar Brisa Sauvignon Blanc",
+      "country": "Chile",
+      "image": "src/images/VistamarBrisa.webp",
+      "flagimage": "src/images/chile.svg",
+      "description": "Central Valley, Chile - Fresh and lively, the mouth is surrounded in well balanced flavors of passion fruit, white flowers and notes of citrus. An excellent pairing to fish, green salads, lighter fare or on its own as an aperitif."
+    },
+    {
+      "id": 5,
+      "name": "Gabrielle Vivien Chablis",
+      "country": "French",
+      "image": "src/images/Gabrielle.webp",
+      "flagimage": "src/images/france.svg",
+      "description": "Decanter-France - Burgundy - Chablis - 'Cool, understated, fresh example. Plenty of purity here, with a fine mineral edge and just the right amount of concentration. Salty notes to finish. Very well put together, this is Chablis for Chablis aficionados.'"
+    }
+  ]
+}

@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import WineCard from "./components/wineCard";
+import { wines } from "../wines.json";
+import NavBar from "./components/header";
+import logo from "./images/winelogo.svg";
+import headerImage from "./images/headerimage2.jpg";
+import Footer from "./components/footer";
+import homeIcon from "./images/houseIcon.svg";
+import shoppingIcon from "./images/ShoppingIcon.svg";
+import heartIcon from "./images/HeartIcon.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <NavBar
+        logo={logo}
+        homeIcon={homeIcon}
+        shoppingIcon={shoppingIcon}
+        heartIcon={heartIcon}
+      />
+      <div className="container">
+        <img
+          className="headerImage2"
+          src={headerImage}
+          alt="wine bottle, 2 wineglasses with wine and some flowers in front"
+        />
+        {wines.map((wine) => {
+          return <WineCard key={wine.id} wine={wine} />;
+        })}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Footer
+        homeIcon={homeIcon}
+        shoppingIcon={shoppingIcon}
+        heartIcon={heartIcon}
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
