@@ -9,6 +9,8 @@ import homeIcon from "./images/houseIcon.svg";
 import shoppingIcon from "./images/ShoppingIcon.svg";
 import heartIcon from "./images/HeartIcon.svg";
 
+import { getImageURL } from "./utils/image-utils";
+
 function App() {
   return (
     <>
@@ -25,7 +27,9 @@ function App() {
           alt="wine bottle, 2 wineglasses with wine and some flowers in front"
         />
         {wines.map((wine) => {
-          return <WineCard key={wine.id} wine={wine} />;
+          return (
+            <WineCard key={wine.id} wine={wine} getImageURL={getImageURL} />
+          );
         })}
       </div>
       <Footer
