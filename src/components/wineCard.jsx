@@ -1,5 +1,5 @@
 const WineCard = (properties) => {
-  const { wine } = properties;
+  const { wine, getImageURL } = properties;
   return (
     <div className="wineCard flex">
       <div>
@@ -10,10 +10,10 @@ const WineCard = (properties) => {
           <div className="wineFlagAndTitle flex">
             <img
               className="flagImage"
-              src={wine.flagimage}
+              src={getImageURL(wine.flagimage)}
               alt="The flag of the country the wine is from"
             />
-            <h2 className="wineName">{wine.name}</h2>
+            <h2 className="wineName">{getImageURL(wine.name)}</h2>
           </div>
         </div>
         <p className="wineDescription">{wine.description}</p>
